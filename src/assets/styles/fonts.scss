@@ -1,0 +1,17 @@
+$Mont: ('Regular': 400);
+
+@each $name, $weight in $Mont {
+  @font-face {
+    font-family: 'Montserrat';
+    src:
+      url('../fonts/Montserrat-#{$name}.woff2') format('woff2'),
+      url('../fonts/Montserrat-#{$name}.woff') format('woff');
+    font-style: normal;
+    font-weight: $weight;
+    font-display: swap;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
